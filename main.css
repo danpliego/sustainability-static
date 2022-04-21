@@ -92,15 +92,6 @@ a:hover {
 
 /* Layout */
 
-header {
-  background: rgba(192, 202, 191, 0.7);
-  padding: 2rem;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  height: 100%;
-  width: var(--sidebar-width);
-}
 
 section {
   padding: 6rem 55px 6rem 300px;
@@ -110,9 +101,62 @@ section {
   justify-content: center;
 }
 
+
 .full-section {
   padding: 0 0 0 250px;
   min-height: 0;
+}
+
+header {
+  background: rgba(192, 202, 191, 0.8);
+  padding: 1rem;
+}
+
+
+.header-nav img {
+  height: auto;
+}
+
+/* desktop */
+
+@media (min-width: 769px) {
+  header {
+    padding: 2rem;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    height: 100%;
+    width: var(--sidebar-width);
+  }
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav img {
+    margin-right: 1rem;
+    width: 120px;
+  }
+
+  section {
+    padding: 4rem 1rem;
+    min-height: 500px;
+  }
+
+  .full-section {
+    padding: 0;
+  }
 }
 
 /* Card  */
@@ -190,4 +234,22 @@ nav ul li a {
   padding: 1rem;
   z-index: 1;
   line-height: 100%;
+}
+
+.difference-points {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+
+  .house-message {
+    font-size: 0.8rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 7rem;
+  }
+
+  .difference-points {
+    text-align: center;
+  }
 }

@@ -4,6 +4,7 @@
   --primary: #3e6f57;
   --primary-l: #b6ceb6;
   --primary-xl: #e9f0e9;
+  --secondary: #E5A5A5;
   --grey: #f8f7f6;
   --cream: #fff3dc;
   --blue: #bae6fd;
@@ -84,10 +85,19 @@ a:hover {
   color: var(--primary)!important;
 }
 
-.sans-serif {
+.lead {
+  font-size: 1.5rem;
+}
+
+.sans-serif, sup {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400 !important;
+}
+
+sup {
+  font-size: 0.8rem;
+  display: inline;
 }
 
 /* Layout */
@@ -95,7 +105,7 @@ a:hover {
 
 section {
   padding: 6rem 55px 6rem 300px;
-  min-height: 700px;
+  min-height: 750px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,6 +181,10 @@ header {
   border: 1px solid var(--primary-l);
 }
 
+.bg-secondary .card {
+  background: rgba(255,255,255, .3);
+}
+
 /* Backgrounds */
 
 .bg-image {
@@ -182,11 +196,15 @@ header {
 }
 
 .bg-primary {
-  background: var(--primary-l) !important;
+  background-color: var(--primary-l)!important;
 }
 
 .bg-primary-l {
-  background: var(--primary-xl);
+  background-color: var(--primary-xl);
+}
+
+.bg-secondary {
+  background-color: var(--secondary)!important;
 }
 
 .bg-blue {
@@ -240,6 +258,52 @@ nav ul li a {
   text-align: left;
 }
 
+.flower-container {
+}
+
+.climate, .native, .pollinator {
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .flower-container {
+    background: url('images/flowers.png') no-repeat;
+    background-size: cover;
+    height: 50vw;
+    position: relative;
+  }
+
+  .climate, .native, .pollinator {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .climate {
+    top: 27vw;
+    left: 5vw;
+  }
+  
+  .native {
+    top: 12vw;
+    left: 30vw;
+    width: 30vw;
+  }
+  
+  .pollinator {
+    top: 32vw;
+    right: 6vw;
+    width: 25vw;
+  }
+
+  .bg-pollinators {
+    background: url('images/bg-flower.jpg') no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Mobile  */
+
 @media (max-width: 768px) {
 
   .house-message {
@@ -251,5 +315,9 @@ nav ul li a {
 
   .difference-points {
     text-align: center;
+  }
+
+  .climate, .native, .pollinator {
+    padding: 1rem;
   }
 }

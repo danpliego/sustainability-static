@@ -8,20 +8,20 @@
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
   <script type="text/javascript">
-    
-    document.addEventListener("DOMContentLoaded", function(event) {
+
+    document.addEventListener("DOMContentLoaded", function (event) {
       const sections = document.querySelectorAll("section");
       const navLi = document.querySelectorAll("nav li a");
       window.onscroll = () => {
         var current = "";
-  
+
         sections.forEach((section) => {
           const sectionTop = section.offsetTop;
           if (pageYOffset >= sectionTop - 60) {
             current = section.getAttribute("id");
           }
         });
-  
+
         navLi.forEach((li) => {
           li.classList.remove("active");
           if (li.classList.contains(current)) {
@@ -75,7 +75,8 @@
         <div class="row no-gutters">
           <div class="col-lg-6 d-flex flex-column justify-content-center">
             <h6 class="sans-serif text-uppercase mb-3">OUR SUSTAINABILITY MISSION</h6>
-            <h2 class="mb-3">As the largest residential landscaping company in the United States, Yardzen will do our part to offset
+            <h2 class="mb-3">As the largest residential landscaping company in the United States, Yardzen will do our
+              part to offset
               climate change, restore habitat, and expand biodiversity in every yard we design</h2>
             <p>In this country alone, there are more than 130 million residental lots. Making proactively sustainable
               decisions in these spaces is one of our biggest opportunities opportunities to heal ecosystems and halt
@@ -93,7 +94,8 @@
       <div class="container text-center">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>Americans across all generations are willing to spend more to act sustainably than they were two years ago
+            <h2>Americans across all generations are willing to spend more to act sustainably than they were two years
+              ago
             </h2>
             <p>
               Each Generations Willingness to Spend More for Sustainable Products¹
@@ -139,7 +141,8 @@
           <div class="col col-auto">
             <div class="circle-container bg-cream">
               <h1>26%</h1>
-              <p class="font-sm">Percent of adults who have personally taken action to help address climate change in the past year <sup>2</sup></p>
+              <p class="font-sm">Percent of adults who have personally taken action to help address climate change in
+                the past year <sup>2</sup></p>
             </div>
           </div>
         </div>
@@ -158,7 +161,7 @@
             <h1 class="display">
               130,000,000
               <sup>4</sup>
-          </h1>
+            </h1>
             <h2>Residential lots in the United States</h2>
             <div class="card mt-5 text-dark">
               <div class="row">
@@ -183,26 +186,64 @@
       </div>
     </section>
 
-    <section id="section-6" class="bg-blue">
+    <section id="section-11" class="bg-secondary bg-image text-center bg-pollinators">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
-            <img src="images/wild.png" class="img-fluid" alt="Wildlife illustration">
-          </div>
-          <div class="col-lg-7 d-flex flex-column justify-content-center">
-            <h6 class="sans-serif mb-3 text-uppercase">Wildlife Corridors</h6>
-            <h3>
-              Wildlife corridors are pathways in water, land, and air in which birds, mammals, invertebrates, reptiles,
-              and insects migrate, feed, drink, and move to and from larger areas of habitat.
-            </h3>
-            <h3>
-              Human development, including housing, roads, and freeways, has chopped habitat into fragments too small to
-              sustain biodiversity, and introduced dangerous, often impassable boundaries that block migration and
-              threaten wildlife populations.
-            </h3>
+          <div class="col-2"></div>
+          <div class="col-lg-7">
+            <img src="images/humming.png" class="img-fluid d-md-none mb-5" width="200px" alt="">
+            <h1 class="mb-5">The pollinators our ecosystems rely on are at risk</h1>
+            <div class="row align-items-center justify-content-center mb-5">
+              <div class="col col-auto">
+                <h1>3B</h1>
+              </div>
+              <div class="col col-auto">
+                <p>fewer songbirds in North America than in 1970</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card mb-3">
+                  <h1>96% <sup>4</sup></h1>
+                  <p>of birds rear their young on insects</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-3">
+                  <h1>45% <sup>7</sup></h1>
+                  <p>fewer insects than in 1974</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-3">
+                  <h1>87.5% <sup>8</sup></h1>
+                  <p>of all plants are pollinated by insects</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section id="section-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <h2>Putting pollinators at risk has consequences for our food supply</h2>
+            <div class="card bg-primary-l text-center mt-5">
+              <h1>75% <sup>3</sup></h1>
+              <p>total global food production relies on pollination</p>
+            </div>
+          </div>
+          <div class="col-1"></div>
+          <div class="col-lg-5">
+            <img src="images/apple.png" class="img-fluid" alt="Illustration of a bitten apple" />
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <section id="section-7">
@@ -277,14 +318,14 @@
             <div class="card bg-primary-l p-5">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="px-3 pb-5">
+                  <div class="px-3 pb-3">
                     <img src="images/promise-plant.png" width="71px" class="mb-3" alt="Plant illustration">
                     <h3>76%</h3>
                     <p>of Yardzen clients see native plants as more important than plants that are specific to style</p>
                   </div>
                 </div>
                 <div class="col-lg-6">
-                  <div class="px-3 pb-5">
+                  <div class="px-3 pb-3">
                     <img src="images/promise-drop.png" width="71px" class="mb-3" alt="Water drops illustration">
                     <h3>89%</h3>
                     <p>of clients see water conservation as either somewhat or very important</p>
@@ -297,42 +338,37 @@
       </div>
     </section>
 
-    <section
-      id="section-11"
-      class="bg-secondary bg-image text-center bg-pollinators"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-lg-7">
-            <img src="images/humming.png" class="img-fluid d-md-none mb-5" width="200px" alt="">
-            <h1 class="mb-5">The pollinators our ecosystems rely on are at risk</h1>
-            <div class="row align-items-center justify-content-center mb-5">
-              <div class="col col-auto">
-                <h1>3B</h1>
-              </div>
-              <div class="col col-auto">
-                <p>fewer songbirds in North America than in 1970</p>
+    <section id="section-14" class="text-center bg-primary-l text-primary">
+      <h2>Yardzen drives meaningful impact for local communities</h2>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="p-3 p-lg-5">
+                <img src="images/footer-leaf.png" width="115px" class="mb-3" alt="Illustration of a growing plant">
+                <h2>100,000</h2>
+                <h5>pollinator plants planted</h5>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card mb-3">
-                  <h1>96% <sup>4</sup></h1>
-                  <p>of birds rear their young on insects</p>
-                </div>
+            <div class="col-lg-6">
+              <div class="p-3 p-lg-5">
+                <img src="images/footer-drop.png" width="115px" class="mb-3" alt="Illustration of water drops">
+                <h2>1,125,000</h2>
+                <h5>gallons of water saved</h5>
               </div>
-              <div class="col-lg-4">
-                <div class="card mb-3">
-                  <h1>45% <sup>7</sup></h1>
-                  <p>fewer insects than in 1974</p>
-                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-3 p-lg-5">
+                <img src="images/footer-plant.png" width="115px" class="mb-3" alt="Illustration of tree">
+                <h2>50,000</h2>
+                <h5>trees planted</h5>
               </div>
-              <div class="col-lg-4">
-                <div class="card mb-3">
-                  <h1>87.5% <sup>8</sup></h1>
-                  <p>of all plants are pollinated by insects</p>
-                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="p-3 p-lg-5">
+                <img src="images/footer-plant.png" width="115px" class="mb-3" alt="Illustration of tree">
+                <h2>6,000</h2>
+                <h5>vegetable gardens</h5>
               </div>
             </div>
           </div>
@@ -340,24 +376,26 @@
       </div>
     </section>
 
-
-    <section id="section-12">
+    <section id="section-6" class="bg-blue">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-content-center">
-            <h2>Putting pollinators at risk has consequences for our food supply</h2>
-            <div class="card bg-primary-l text-center mt-5">
-              <h1>75% <sup>3</sup></h1>
-              <p>total global food production relies on pollination</p>
-            </div>
-          </div>
-          <div class="col-1"></div>
           <div class="col-lg-5">
-            <img src="images/apple.png" class="img-fluid" alt="Illustration of a bitten apple" />
+            <img src="images/wild.png" class="img-fluid" alt="Wildlife illustration">
+          </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <h3 class="sans-serif mb-5 text-uppercase">Wildlife Corridors</h3>
+            <h3>
+              Wildlife corridors are pathways in water, land, and air in which birds, mammals, invertebrates, reptiles,
+              and insects migrate, feed, drink, and move to and from larger areas of habitat.
+            </h3>
+            <h3>
+              Human development, including housing, roads, and freeways, has chopped habitat into fragments too small to
+              sustain biodiversity, and introduced dangerous, often impassable boundaries that block migration and
+              threaten wildlife populations.
+            </h3>
           </div>
         </div>
       </div>
-
     </section>
 
     <section id="section-13" class="bg-grey">
@@ -368,124 +406,13 @@
           <p class="mb-4">Use the resources below to find the most productive plants to accomodate fragmented habitats
           </p>
           <div>
-            <a href="#" class="btn btn-primary">Find Native Plants</a>
+            <a href="https://www.nwf.org/NativePlantFinder/Plants" target="_blank" class="btn btn-primary">Find Native Plants</a>
           </div>
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-6">
           <img src="images/aerial-houses.jpg" class="img-fluid" alt="Aerial view of neighborhood">
         </div>
-      </div>
-    </section>
-
-    <section id="section-14" class="text-center bg-primary-l text-primary">
-      <h2>Yardzen drives meaningful impact for local communities</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="p-3 p-lg-5">
-            <img src="images/footer-leaf.png" width="115px" class="mb-3" alt="Illustration of a growing plant">
-            <h2>100,000</h2>
-            <h5>pollinator plants planted</h5>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-3 p-lg-5">
-            <img src="images/footer-drop.png" width="115px" class="mb-3" alt="Illustration of water drops">
-            <h2>1,125,000</h2>
-            <h5>gallons of water saved</h5>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-3 p-lg-5">
-            <img src="images/footer-plant.png" width="115px" class="mb-3" alt="Illustration of tree">
-            <h2>50,000</h2>
-            <h5>trees planted</h5>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="p-3 p-lg-5">
-            <img src="images/footer-plant.png" width="115px" class="mb-3" alt="Illustration of tree">
-            <h2>6,000</h2>
-            <h5>vegetable gardens</h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="section-15">
-      <div class="container text-center">
-        <h2>How do I decide what plants are best for my yard?</h2>
-        <p>Let’s review the three main ways we distinguish environmentally-friendly plantings</p>
-      </div>
-      <div class="flower-container">
-        <div class="climate">
-          <h3>Climate Adapted</h3>
-          <p>
-            Climate adapted plants are good for water conservation (equivalent to appropriate natives), but not nearly
-            as good for habitat. Some climate adapted plants are great habitat for generalist species, but the majority
-            of local fauna relies on natives for habitat.
-          </p>
-        </div>
-        <div class="native">
-          <h3>Native</h3>
-          <p>
-            Native plants have the best habitat value, because they have adapted to the local environment. They provide
-            the basis of life for local birds and bugs. Side note: Keystones are the most productive natives - think Oak
-            trees!
-          </p>
-        </div>
-        <div class="pollinator">
-          <h3>Pollinator</h3>
-          <p>
-            A pollinator plant could be either native or climate adapted, but natives are more productive when it come
-            to supporting habitats. However, some non-natives have proven to help support pollinators communities.
-          </p>
-        </div>
-      </div>
-      <img src="images/flowers.png" class="img-fluid d-xl-none" alt="">
-    </section>
-
-    <section id="section-16" class="bg-cream full-section">
-      <div class="row g-0">
-        <div class="col-lg-5 bg-cream d-flex flex-column justify-content-center">
-          <div class="p-5">
-            <h2 class="w-75">How can you help make a difference?</h2>
-          </div>
-        </div>
-        <div class="col-lg-7 bg-light difference-points">
-          <div class="p-5">
-            <div class="row flex-column flex-lg-row mb-3">
-              <div class="col col-auto">
-                <img src="images/field-bees.png" alt="">
-              </div>
-              <div class="col d-flex flex-column justify-content-center">
-                <h3>Plant Native & Keystones</h3>
-                <p>Provide more food, water, and shelter for birds, bees, and other critical critters. All in the name of
-                  biodiversity. </p>
-              </div>
-            </div>
-            <div class="row flex-column flex-lg-row mb-3">
-              <div class="col col-auto">
-                <img src="images/field-trees.png" alt="">
-              </div>
-              <div class="col d-flex flex-column justify-content-center">
-                <h3>Plant Trees</h3>
-                <p>Cut back on air pollution, urban heat islands, and home energy use.</p>
-              </div>
-            </div>
-            <div class="row flex-column flex-lg-row mb-3">
-              <div class="col col-auto">
-                <img src="images/field-drops.png" alt="">
-              </div>
-              <div class="col d-flex flex-column justify-content-center">
-                <h3>Permeable Paving & Planting Beds</h3>
-                <p>Slow water down and soak it back into the ground before it can overwhelm city drains. This cuts down on
-                  flooding and water pollution</p>
-              </div>
-            </div>
-          </div>
-          </div>
       </div>
     </section>
 
@@ -500,8 +427,7 @@
           </li>
           <li>Tyson, A., Kennedy, B., &amp; Funk, C. (2021, May 26). Gen Z, millennials stand out for climate change
             activism, social media engagement with issue. Pew Research Center Science &amp; Society. From
-            <a
-              target="_blank"
+            <a target="_blank"
               href="https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/">
               https://www.pewresearch.org/science/2021/05/26/gen-z-millennials-stand-out-for-climate-change-activism-social-media-engagement-with-issue/
             </a>
@@ -514,11 +440,9 @@
           <li>Wargo, 2003, as cited in Tallamy, 2020. Tallamy, D. W. (2020). Nature's best hope: A new approach to
             conservation that starts in your yard. Workman Pub Co. </li>
           <li>Olsen, A. (2005, April 15). Panna: Refuse to use Lawn Chemicals. Pesticide Action Network. From
-            <a
-              target="_blank"
-              href="https://www.panna.org/legacy/panups/panna-refuse-use-lawn-chemicals">
+            <a target="_blank" href="https://www.panna.org/legacy/panups/panna-refuse-use-lawn-chemicals">
               https://www.panna.org/legacy/panups/panna-refuse-use-lawn-chemicals
-          </a>
+            </a>
           </li>
           <li>Dirzo, 2014, as cited in Tallamy, 2020. Tallamy, D. W. (2020). Nature's best hope: A new approach to
             conservation that starts in your yard. Workman Pub Co. </li>

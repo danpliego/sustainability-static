@@ -1,8 +1,8 @@
 /* Reset  */
 
 @font-face {
-  font-family: "Hatton";
-  src: url("/fonts/hatton.otf") format("opentype"),
+  font-family: "Domaine Display";
+  src: url("https://console.cloud.google.com/storage/browser/_details/yardzen-public-assets/domaine-display-web-regular.woff") format("woff"),
 }
 
 :root {
@@ -29,7 +29,7 @@ h4,
 h5,
 h6,
 .display {
-  font-family: 'Hatton', Georgia, serif;
+  font-family: 'Domaine Display', serif;
 }
 
 .display {
@@ -316,8 +316,8 @@ nav ul li a {
   }
   
   .climate {
-    top: 27vw;
-    left: 5vw;
+    top: 28vw;
+    left: 6vw;
   }
   
   .native {
@@ -337,6 +337,7 @@ nav ul li a {
     background-size: cover;
     height: 50vw;
     position: relative;
+    max-width: 1600px;
   }
 
 }
@@ -374,8 +375,8 @@ nav ul li a {
   }
 
   .climate {
-    top: 23vw;
-    left: 0vw;
+    top: 26vw;
+    left: 2vw;
   }
   
   .native {

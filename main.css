@@ -359,6 +359,12 @@ nav ul li a {
   .climate, .native, .pollinator {
     padding: 1rem;
   }
+
+  .climate-chart .col-xs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {

@@ -103,6 +103,15 @@ a:hover {
 sup {
   font-size: 0.8rem;
   display: inline;
+  top: -1em;
+}
+
+p sup {
+  top: -.5em;
+}
+
+h1 sup {
+  top: -2em;
 }
 
 .font-sm {
@@ -291,6 +300,12 @@ nav ul li a {
   background: var(--primary-l);
   z-index: 1;
   line-height: 100%;
+}
+
+.house-message sup {
+  left: 3rem;
+  font-size: 0.6rem;
+  top: -1em;
 }
 
 .difference-points {

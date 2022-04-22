@@ -328,7 +328,7 @@ nav ul li a {
 
 @media (min-width: 769px) {
   .bg-pollinators {
-    background: url('images/bg-flower.jpg') no-repeat;
+    background: url('images/bg-flower.png') no-repeat;
     background-size: cover;
   }
 }

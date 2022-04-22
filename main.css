@@ -310,6 +310,7 @@ nav ul li a {
 
 .difference-points {
   text-align: left;
+  /* border-left: 1px solid rgba(0,0,0,.05); */
 }
 
 .climate, .native, .pollinator {
@@ -329,27 +330,10 @@ nav ul li a {
     width: 400px;
     text-align: center;
   }
-  
-  .climate {
-    top: 28vw;
-    left: 6vw;
-  }
-  
-  .native {
-    top: 12vw;
-    left: 30vw;
-    width: 30vw;
-  }
-  
-  .pollinator {
-    top: 32vw;
-    right: 6vw;
-    width: 25vw;
-  }
 
   .flower-container {
     background: url('images/flowers.png') no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 50vw;
     position: relative;
     max-width: 1600px;
@@ -383,7 +367,7 @@ nav ul li a {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1350px) {
+@media (min-width: 1200px) {
 
   .climate, .native, .pollinator {
     font-size: 0.8rem;
@@ -391,18 +375,18 @@ nav ul li a {
 
   .climate {
     top: 26vw;
-    left: 2vw;
+    left: 4vw;
   }
   
   .native {
-    top: 8vw;
-    left: 26vw;
-    width: 30vw;
+    top: 10vw;
+    left: 28vw;
+    width: 25vw;
   }
   
   .pollinator {
-    top: 28vw;
-    right: 6vw;
+    top: 30vw;
+    left: 40vw;
     width: 25vw;
   }
 }

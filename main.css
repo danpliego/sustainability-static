@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "Domaine Display";
-  src: url("https://console.cloud.google.com/storage/browser/_details/yardzen-public-assets/domaine-display-web-regular.woff") format("woff"),
+  src: url("https://storage.googleapis.com/yardzen-public-assets/domaine-display-web-regular.woff") format("woff");
+  font-weight: 600;
 }
 
 :root {
@@ -29,7 +30,7 @@ h4,
 h5,
 h6,
 .display {
-  font-family: 'Domaine Display', serif;
+  font-family: 'Domaine Display', 'Georgia', serif;
 }
 
 .display {

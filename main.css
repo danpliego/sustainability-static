@@ -138,7 +138,7 @@ section {
 }
 
 header {
-  background: rgba(192, 202, 191, 0.9);
+  background: rgba(192, 202, 191, 0.95);
 }
 
 
@@ -179,6 +179,14 @@ header {
 
   header nav h6 {
     font-size: 14px;
+  }
+
+  header .nav-item {
+    padding: 0.5rem;
+  }
+  
+  header .nav-item a {
+    font-size: 1rem;
   }
 
   .navbar-light .navbar-toggler {

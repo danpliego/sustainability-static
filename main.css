@@ -131,12 +131,6 @@ section {
   justify-content: center;
 }
 
-
-.full-section {
-  padding: 0 0 0 250px;
-  min-height: 0;
-}
-
 header {
   background: rgba(192, 202, 191, 0.95);
 }
@@ -195,15 +189,10 @@ header {
     color: #000;
     border: 0;
   }
-  }
 
   section {
     padding: 4rem 1rem;
     min-height: 500px;
-  }
-
-  .full-section {
-    padding: 0;
   }
 }
 

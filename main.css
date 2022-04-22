@@ -58,6 +58,7 @@ ol li {
 
 a {
   color: #000;
+  word-break: break-all;
 }
 
 a:hover {

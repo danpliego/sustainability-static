@@ -138,8 +138,7 @@ section {
 }
 
 header {
-  background: rgba(192, 202, 191, 0.8);
-  padding: 1rem;
+  background: rgba(192, 202, 191, 0.9);
 }
 
 
@@ -175,8 +174,19 @@ header {
   }
 
   header nav img {
-    margin-right: 1rem;
-    width: 120px;
+    width: 100px;
+  }
+
+  header nav h6 {
+    font-size: 14px;
+  }
+
+  .navbar-light .navbar-toggler {
+    font-size: 14px;
+    padding: 0.5rem;
+    color: #000;
+    border: 0;
+  }
   }
 
   section {

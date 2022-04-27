@@ -1,20 +1,15 @@
 /* Reset  */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;1,500&display=swap');
 
 @font-face {
-  font-family: "Domaine Display";
-  src: url("https://storage.googleapis.com/yardzen-public-assets/domaine-display-web-regular.woff") format("woff");
-  font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+
 :root {
-  --primary: #3e6f57;
-  --primary-l: #b6ceb6;
-  --primary-xl: #e9f0e9;
-  --secondary: #E5A5A5;
-  --grey: #f8f7f6;
-  --cream: #fff3dc;
+  --primary: #262626;
+  --cream: #F2F0F0;
   --blue: #bae6fd;
-  --sidebar-width: 250px;
 }
 
 html,
@@ -30,7 +25,7 @@ h4,
 h5,
 h6,
 .display {
-  font-family: 'Domaine Display', 'Georgia', serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .display {
@@ -66,7 +61,118 @@ a:hover {
   color: #000;
 }
 
+
+/* said-tyle-lab */
+.section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section-black{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: var(--cream);
+  background-color: var(--primary);
+}
+
+.section-black .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  background-color: var(--primary);
+  color: var(--cream));
+}
+
+/* CARD */
+
+.work-card {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 1rem;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  background-size: cover;
+}
+
+.work-card img {
+  object-fit: contain;
+  max-width: 100%;
+  opacity: 1;
+  transition: ease-out .15s;
+}
+
+.work-card figcaption {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.work-card:hover {
+  border: 1px solid black;
+  background: #fff!important;
+  background-image: none;
+}
+
+.work-card:hover img {
+  opacity: 0;
+}
+
+.work-card:hover figcaption {
+  display: block;
+  padding: 1rem;
+}
+
+/* section title  */
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary);
+  padding-bottom: 15px;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+.section-title .title {
+  color: var(--primary);
+
+}
+.section-title-card {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary);
+  align-items: baseline;
+  margin-bottom:15px;
+}
+.card-info {
+  text-transform: uppercase;
+}
+.section-title-footer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cream);
+  padding-bottom: 15px;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+.footer a {
+  color: var(--cream);
+}
+
+/* navbar custom */
+.navbar-soda{
+  padding: 20px 30px;
+  border-bottom: 1px solid var(--primary);
+  margin-bottom: 20px;
+}
+
+
 /* bootstrap overrides */
+
+
+
 
 .btn,
 .btn:hover,
@@ -78,16 +184,20 @@ a:hover {
 
 .btn {
   text-transform: uppercase;
-  padding: 0.66rem 1.2rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border: 0;
+  padding: 10px, 13px;
+  font-size: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 150px;
 }
 
 .btn-primary {
-  background: var(--primary-l) !important;
+  background: transparent!important;
 }
 
+.btn-primary:hover {
+  background: var(--primary)!important;
+  color: var(--cream);
+}
 .text-primary {
   color: var(--primary)!important;
 }
@@ -120,25 +230,27 @@ h1 sup {
   font-size: 0.9rem;
 }
 
-/* Layout */
 
-
-section {
-  padding: 6rem 55px 6rem 300px;
-  min-height: 750px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* carousel overrides */
+.carousel-indicators {
+  background-color: var(--cream);
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
 }
+.carousel-caption {
+  text-transform: uppercase;
+  text-align: initial;
+  top: 1.25rem;
+  left: 5%;
+  width: 40%;
+}
+/* Layout */
 
 header {
   background: rgba(192, 202, 191, 0.95);
 }
 
-
-.header-nav img {
-  height: auto;
-}
 
 /* desktop */
 
@@ -190,10 +302,6 @@ header {
     border: 0;
   }
 
-  section {
-    padding: 4rem 1rem;
-    min-height: 500px;
-  }
 }
 
 /* Card  */
@@ -212,39 +320,6 @@ header {
   background: rgba(255,255,255, .3);
 }
 
-/* Backgrounds */
-
-.bg-image {
-  background-size: cover;
-}
-
-.bg-grey {
-  background: var(--grey);
-}
-
-.bg-primary {
-  background-color: var(--primary-l)!important;
-}
-
-.bg-primary-l {
-  background-color: var(--primary-xl);
-}
-
-.bg-secondary {
-  background-color: var(--secondary)!important;
-}
-
-.bg-blue {
-  background: var(--blue);
-}
-
-.bg-cream {
-  background: var(--cream);
-}
-
-.bg-light {
-  background: #fff!important;
-}
 
 /* Nav */
 

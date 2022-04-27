@@ -232,12 +232,7 @@ h1 sup {
 
 
 /* carousel overrides */
-.carousel-indicators {
-  background-color: var(--cream);
-  border-radius: 12px;
-  width: 12px;
-  height: 12px;
-}
+
 .carousel-caption {
   text-transform: uppercase;
   text-align: initial;

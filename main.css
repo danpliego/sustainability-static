@@ -173,12 +173,13 @@ a:hover {
 
 
 /* bootstrap overrides */
-.btn,
+
 .btn:hover,
 .btn:active,
 .btn:focus,
 .btn:focus:hover {
-  color: #000;
+  color: var(--cream);
+  
 }
 .btn:hover {
   color: var(--cream)!important;
@@ -191,6 +192,7 @@ a:hover {
   border: 1px solid var(--primary);
   border-radius: 150px;
   text-decoration: none;
+  color: var(--primary);
 }
 
 .btn-primary {

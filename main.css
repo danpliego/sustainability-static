@@ -89,6 +89,10 @@ a {
   border-radius: 20px;
   border: 1px solid transparent;
   background-size: cover;
+  height: 370px;
+}
+.card-sm {
+  height: 260px!important;
 }
 .work-card:hover p {
   color: var(--primary);
@@ -147,7 +151,9 @@ a {
 }
 .card-info {
   text-transform: uppercase;
+  
 }
+
 .section-title-footer {
   display: flex;
   justify-content: space-between;
@@ -351,6 +357,9 @@ header {
   .footer-padding {
    padding-bottom: 20px; 
   }
+  .work-card {
+    height: 240px;
+  }
 }
 
 /* Small screens */
@@ -376,6 +385,9 @@ header {
   }
   .section ul {
     padding-left: 0!important;
+  }
+  .work-card {
+    height: 240px!important;
   }
 
 }

@@ -30,9 +30,7 @@ h6,
 p {
   text-decoration: none;
 }
-p:hover {
-  color: var(--cream)!important;
-}
+
 
 .display {
   font-size: 4rem;
@@ -64,11 +62,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--cream);
-}
-
-
 /* said-tyle-lab */
 .section {
   margin-top: 100px;
@@ -96,6 +89,9 @@ a:hover {
   border-radius: 20px;
   border: 1px solid transparent;
   background-size: cover;
+}
+.work-card:hover p {
+  color: var(--primary);
 }
 
 .work-card img {
@@ -173,15 +169,14 @@ a:hover {
 
 
 /* bootstrap overrides */
-
+.btn,
 .btn:hover,
 .btn:active,
 .btn:focus,
 .btn:focus:hover {
-  color: var(--cream);
-  
+  color: var(--primary);
 }
-.btn:hover {
+.btn:hover a {
   color: var(--cream)!important;
 }
 
@@ -203,6 +198,9 @@ a:hover {
   background: var(--primary)!important;
   color: var(--cream)!important;
   border: 1px solid var(--primary);
+}
+.btn-primary:hover a {
+  color: var(--cream);
 }
 .text-primary {
   color: var(--primary)!important;

@@ -353,6 +353,14 @@ header {
   .footer-padding {
    padding-bottom: 20px; 
   }
+  .work-card figcaption {
+    padding-top: 15px;
+    position: static;
+    display: block!important;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 /* Small screens */
@@ -379,8 +387,15 @@ header {
   .section ul {
     padding-left: 0!important;
   }
-  .work-card {
-    height: 240px!important;
+  
+  
+  .work-card figcaption {
+    padding-top: 15px;
+    position: static;
+    display: block!important;
+    left: 0;
+    top: 0;
+    z-index: 1;
   }
 
 }

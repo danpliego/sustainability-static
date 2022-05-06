@@ -86,7 +86,6 @@ a {
   position: relative;
   overflow: hidden;
   margin: 0 0 1rem;
-  border-radius: 20px;
   border: 1px solid transparent;
   background-size: cover;
 }
@@ -96,6 +95,7 @@ a {
 
 .work-card img {
   object-fit: contain;
+  border-radius: 20px;
   max-width: 100%;
   opacity: 1;
   transition: ease-out .15s;
@@ -113,6 +113,7 @@ a {
   border: 1px solid black;
   background: #fff!important;
   background-image: none;
+  border-radius: 20px;
 }
 
 .work-card:hover img {
@@ -361,6 +362,18 @@ header {
     top: 0;
     z-index: 1;
   }
+  .work-card:hover {
+    border: none;
+    background: none!important;
+  }
+  .work-card:hover img {
+    opacity: 100%;
+  }
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
 /* Small screens */
@@ -396,6 +409,18 @@ header {
     left: 0;
     top: 0;
     z-index: 1;
+  }
+  .work-card:hover {
+    border: none;
+    background: none!important;
+  }
+  .work-card:hover img {
+    opacity: 100%;
+  }
+  .section-title {
+
+    display: flex;
+    flex-direction: column;
   }
 
 }

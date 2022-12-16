@@ -58,8 +58,30 @@ ol li {
 
 a {
   color: #000;
-  word-break: break-all;
   text-decoration: none;
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero-title h1 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.font-lg {
+  font-size: 1.3rem;
 }
 
 /* said-tyle-lab */
@@ -109,21 +131,26 @@ a {
   z-index: 1;
 }
 
-.work-card:hover {
-  border: 1px solid black;
-  background: #fff!important;
-  background-image: none;
-  border-radius: 20px;
+
+
+@media (min-width: 769px) {
+  .work-card:hover {
+    border: 1px solid black;
+    background: #fff!important;
+    background-image: none;
+    border-radius: 20px;
+  }
+  
+  .work-card:hover img {
+    opacity: 0;
+  }
+  
+  .work-card:hover figcaption {
+    display: block;
+    padding: 1rem;
+  }
 }
 
-.work-card:hover img {
-  opacity: 0;
-}
-
-.work-card:hover figcaption {
-  display: block;
-  padding: 1rem;
-}
 
 /* section title  */
 
@@ -145,8 +172,6 @@ a {
   border-bottom: 1px solid var(--primary);
   align-items: baseline;
   margin-bottom:15px;
-}
-.card-info {
   text-transform: uppercase;
 }
 
@@ -163,26 +188,26 @@ a {
 }
 
 /* navbar custom */
-.navbar-soda{
-  padding: 20px 30px;
+.navbar-soda {
+  padding: 0.5rem 30px;
   border-bottom: 1px solid var(--primary);
   margin-bottom: 20px;
 }
 
 
 /* bootstrap overrides */
-.btn,
+/* .btn,
 .btn:hover,
 .btn:active,
 .btn:focus,
 .btn:focus:hover {
   color: var(--primary);
 }
-.btn:hover a {
+.btn-rpi:hover a {
   color: var(--cream)!important;
-}
+} */
 
-.btn {
+.btn-primary {
   text-transform: uppercase;
   padding: 10px, 13px;
   font-size: 1rem;
@@ -266,22 +291,6 @@ header {
   }
 }
 
-/* mobile */
-
-@media (max-width: 768px) {
- 
-  .section {
-    margin-top: 60px!important;
-    margin-bottom: 60px!important;
-  }
-  .section-black {
-    margin-top: 60px!important;
-    margin-bottom: 60px!important;
-  
-  }
-
-}
-
 /* Card  */
 
 .card {
@@ -326,11 +335,6 @@ header {
   h2 { 
     font-size: 1rem;
   }
-  .section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
-  }
   .section-title {
     margin-bottom: 20px;
   }
@@ -361,13 +365,13 @@ header {
     top: 0;
     z-index: 1;
   }
-  .work-card:hover {
+  /* .work-card:hover {
     border: none;
     background: none!important;
-  }
-  .work-card:hover img {
+  } */
+  /* .work-card:hover img {
     opacity: 100%;
-  }
+  } */
   .section-title {
     display: flex;
     flex-direction: column;

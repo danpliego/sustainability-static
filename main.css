@@ -72,12 +72,18 @@ a {
 }
 
 .hero-title h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 section {
   padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
 }
 
 .font-lg {
@@ -328,12 +334,6 @@ header {
   }
   .carousel-caption {
     width: 70%;
-  }
-  h1 {
-    font-size: 1.5rem;
-  }
-  h2 { 
-    font-size: 1rem;
   }
   .section-title {
     margin-bottom: 20px;

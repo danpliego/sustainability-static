@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,600;1,500&display=swap');
 
 @font-face {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Morgenwalsh';
+  src: url('fonts/Morgenwalsh.ttf') format('truetype'),
+      url('fonts/Morgenwalsh.otf') format('OpenType');
+  font-style: normal;
+  font-weight: normal;
 }
 
 
@@ -27,8 +31,20 @@ h6,
 .display {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 p {
   text-decoration: none;
+ 
+}
+
+.p-f {
+  text-decoration: none;
+  font-family: 'Morgenwalsh';
+}
+
+.p-des {
+  text-decoration: none;
+  font-family: 'Morgenwalsh';
 }
 
 
@@ -76,9 +92,9 @@ a {
   font-weight: 700;
 }
 
-section {
+/*section {
   padding: 5rem 0;
-}
+}*/
 
 @media (max-width: 768px) {
   section {
@@ -175,9 +191,9 @@ section {
 .section-title-card {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid var(--primary);
+
   align-items: baseline;
-  margin-bottom:15px;
+
   text-transform: uppercase;
 }
 
@@ -196,7 +212,7 @@ section {
 /* navbar custom */
 .navbar-soda {
   padding: 0.5rem 30px;
-  border-bottom: 1px solid var(--primary);
+  /*border-bottom: 1px solid var(--primary);*/
   margin-bottom: 20px;
 }
 
@@ -435,4 +451,126 @@ header {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+}
+
+.sec {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  align-items: baseline;
+  font-size: 36px;
+}
+
+.section-desc {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--primary);
+  padding-bottom: 15px;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+
+.section-b{
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+
+
+.carousel .control-arrow::before,
+.carousel .control-prev.control-arrow::before {
+  border-left-color: var(--purple) !important;
+}
+
+.carousel .control-prev.control-arrow::before {
+  border-right-color: var(--purple) !important;
+}
+
+.carousel .control-dots .dot {
+  background: #000 !important;
+  box-shadow: none !important;
+}
+
+
+.carousel-control-prev, .carousel-control-next{
+  height: 6vh;
+  width: 6vh;
+  top:50%;
+  border-radius: 50%;
+  border-color: #000;
+  color: #000;
+  right: 0;
+}
+
+.carousel-control-next-icon {
+  background-color: #131313;
+  color: #000;
+}
+
+.carousel-control-prev-icon {
+  background-color: #131313;
+  color: #000;
+}
+
+.carousel-control-next span,
+.carousel-control-prev span{
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #000;
+}
+
+.pad-tp{
+  padding-top: 2rem;
+}
+
+.p-b{
+  font-weight: 800;
+}
+
+.font-s{
+  font-size: 15px;
+}
+
+.bg-section {
+  background-image: url("/images/casos-de-estudio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.font-bold{
+  font-weight: 600;
+}
+
+.b-btn{
+  Width: Fixed (393px);
+  Height: Hug (41px);
+  Top: 3705px;
+  Left: 1007px;
+  Border: 1px;
+  Padding: 15px;
+  Gap: 10px;
+  border-radius: 10px;
+  background-color: #1E1E1E;
+  align-items: end;
+}
+.b-btn:hover{
+  background-color: #fff;
+  border: #000;
+}
+.font-w{
+  color: #fff;
+  font-size: 21px;
+}
+.font-w:hover{
+  color: #000;
+  font-size: 21px;
+}
+
+.title-clientes{
+  display: flex;
+  justify-content: space-between;
 }

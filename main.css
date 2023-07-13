@@ -133,9 +133,6 @@ a {
   border: 1px solid transparent;
   background-size: cover;
 }
-.work-card:hover p {
-  color: var(--primary);
-}
 
 .work-card img {
   object-fit: contain;
@@ -156,7 +153,7 @@ a {
 
 
 @media (min-width: 769px) {
-  .work-card:hover {
+  /*.work-card:hover {
     border: 1px solid black;
     background: #fff!important;
     background-image: none;
@@ -165,7 +162,7 @@ a {
   
   .work-card:hover img {
     opacity: 0;
-  }
+  }*/
   
   .work-card:hover figcaption {
     display: block;
@@ -546,10 +543,7 @@ header {
 }
 
 .b-btn{
-  Width: Fixed (393px);
-  Height: Hug (41px);
-  Top: 3705px;
-  Left: 1007px;
+  Width: 393px;
   Border: 1px;
   Padding: 15px;
   Gap: 10px;
@@ -557,20 +551,126 @@ header {
   background-color: #1E1E1E;
   align-items: end;
 }
-.b-btn:hover{
-  background-color: #fff;
-  border: #000;
-}
+
 .font-w{
-  color: #fff;
+  color: #F2F0F0;
   font-size: 21px;
 }
 .font-w:hover{
-  color: #000;
+  color: #F2F0F0;
   font-size: 21px;
 }
 
 .title-clientes{
   display: flex;
   justify-content: space-between;
+}
+
+.estudios-box{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.estudios-box-T{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+
+.estudios-btn{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+
+}
+
+.img-p{
+  margin-right: 6%;
+}
+
+.img-p3{
+  margin-right: 6%;
+  margin-left: -5%;
+}
+
+.img-p2{
+  margin-top: 1%;
+  margin-left: 22%;
+  font-size: 17px;
+}
+
+.fpa{
+  margin-bottom: -5%;
+  font-weight: 600;
+}
+
+.flower{
+  display: flex;
+  justify-content: center;
+  margin-top: -4%;
+}
+
+.square-nc{
+  width: 393px;
+  border: 1px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 3.271730661392212px solid #000;
+  background-color: #1e1e1e00;
+  text-align: center;
+}
+
+.square-btn-slide{
+  border: 1px;
+  padding: 15px;
+  border-radius: 50px;
+  border: 3.271730661392212px solid #ffffff;
+  background-color: #1e1e1e00;
+  text-align: center;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  border-radius: 50px;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.font-boldb{
+  font-weight: 600;
+}
+
+.font-caso-studio-p{
+  font-size: 106px;
+}
+
+.soon{
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.pz{
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.des-p{
+  padding-top: 2rem;
+}
+
+.buttons-position{
+  display: flex;
+}
+
+.btn-l{
+  margin-left: 85%;
 }

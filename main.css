@@ -531,11 +531,36 @@ header {
   font-size: 15px;
 }
 
-.bg-section {
-  background-image: url("/images/casos-de-estudio.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
+
+
+@media (max-width:905px){
+  .bg-section {
+    background-image: url("/images/casos-de-estudio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: none;
+  }
+  .flower{
+    display: flex;
+    justify-content: center;
+    margin-top: -4%;
+    display: none;
+  }
+}
+
+@media (min-width:906px){
+  .bg-section {
+    background-image: url("/images/casos-de-estudio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+  .flower{
+    display: flex;
+    justify-content: center;
+    margin-top: -4%;
+  }
 }
 
 .font-bold{
@@ -606,11 +631,7 @@ header {
   font-weight: 600;
 }
 
-.flower{
-  display: flex;
-  justify-content: center;
-  margin-top: -4%;
-}
+
 
 .square-nc{
   width: 393px;
